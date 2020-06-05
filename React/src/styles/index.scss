@@ -1,0 +1,30 @@
+
+
+
+@import "common";
+@import "animate.css";
+
+html,body,.APP,.main{
+    width:100vw;
+    height:100vh;
+}
+
+.ant-layout-content{
+    position: relative;
+}
+
+@keyframes enter{
+    from{opacity: 0;transform: translateY(-10%)}
+    to{opacity: 1;transform: translateY(0%)}
+}
+@keyframes leave{
+    from{opacity: 1;transform: translateY(0%)}
+    to{opacity: 0;transform: translateY(10%)}
+}
+.fade-enter-active, .enter{
+    animation: enter .6s;
+}
+.fade-leave-active , .leave {
+    animation: leave .6s;
+}
+
